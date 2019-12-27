@@ -1,10 +1,9 @@
 import praw
-import pandas as pd
 from datetime import date
 
-file1 = open("C:/Users/Hamzah/Documents/PCPARTS/sales " + str(date.today()) + ".txt", "a")
+file1 = open("sales" + str(date.today()) + ".txt", "a")
 
-reddit = praw.Reddit(client_id="tWUMVBRDkwnINg", client_secret="86lXP8obaXswzUM8jy-OfUKNaXk", user_agent="PC Sales Bot v1")
+reddit = praw.Reddit(client_id="*", client_secret="*", user_agent="PC Sales Bot v1")
 
 subreddit = reddit.subreddit("buildapcsales")
 
