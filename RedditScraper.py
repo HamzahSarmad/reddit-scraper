@@ -12,7 +12,7 @@ for submission in subreddit.new(limit=25):
     file1.write("Text: " + submission.selftext + "\n")
     file1.write("Score: " + str(submission.score) + "\n")
     file1.write("URL: " + submission.url + "\n")
-    file1.write("\n")
+    file1.write("------------------------------\n")
 
 
 file1.close()
